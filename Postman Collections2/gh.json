@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "a34f256f-f70d-40e5-b13c-661940663f32",
+		"_postman_id": "36b091b3-e17c-458d-99df-0f3d71f14cec",
 		"name": "gh",
 		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "New Request",
-			"id": "d55f1475-f8e4-4f50-b63c-b77245b4e5ea",
+			"id": "2f80d421-e425-4d5f-b36d-9537e0d3b637",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"admin\": \"i am\",\r\n    \"password\": \"strong\"\r\n}",
+					"raw": "{\r\n    \"admin\": \"i am\",\r\n    \"password\": \"strong\",\r\n    \"data\": 666\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
