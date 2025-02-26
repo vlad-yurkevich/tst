@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"admin\": \"i am\",\r\n    \"password\": \"strong\",\r\n    \"data\": 777\r\n}",
+					"raw": "{\r\n    \"admin\": \"i am\",\r\n    \"password\": \"strong\",\r\n    \"data\": 77789\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
