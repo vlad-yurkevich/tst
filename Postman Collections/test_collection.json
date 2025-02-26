@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "600726bf-256e-471d-b822-e38b95774202",
+		"name": "SOAP",
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SOAP_KBB (см. хидер)",
+			"id": "d064c707-e5b4-4991-b513-2b3b7b3c7316",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "SOAPAction",
+						"value": "urn:CreditBureauIntf-CreditBureau#GetAiskbReport",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n\t<SOAP-ENV:Body>\r\n\t\t<m:GetAiskbReport xmlns:m=\"urn:CreditBureauIntf-CreditBureau\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\r\n\t\t\t<userSubdivision xsi:type=\"xsd:string\">String</userSubdivision>\r\n\t\t\t<userLogin xsi:type=\"xsd:string\">String</userLogin>\r\n\t\t\t<userName xsi:type=\"xsd:string\">String</userName>\r\n\t\t\t<birthDate xsi:type=\"xsd:string\">String</birthDate>\r\n\t\t\t<personalNumber xsi:type=\"xsd:string\">String</personalNumber>\r\n\t\t\t<docType xsi:type=\"xsd:int\">0</docType>\r\n\t\t\t<docDate xsi:type=\"xsd:string\">String</docDate>\r\n\t\t\t<docNumber xsi:type=\"xsd:string\">String</docNumber>\r\n\t\t\t<assentDate xsi:type=\"xsd:string\">String</assentDate>\r\n\t\t\t<requestPurpose xsi:type=\"xsd:int\">0</requestPurpose>\r\n\t\t\t<previousOnly xsi:type=\"xsd:boolean\">true</previousOnly>\r\n\t\t</m:GetAiskbReport>\r\n\t</SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "http://localhost/CreditBureau/CreditBureauWS.dll/soap/CreditBureau"
+			},
+			"response": []
+		}
+	]
+}
